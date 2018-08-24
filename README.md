@@ -5,7 +5,7 @@
 3. Go to Google sheets, create a google sheet, change the name of the first sheet from Sheet1 to Products
 4. Copy the ID of the sheet in the URL and put it the `SPREADSHEET_ID` environment variable: `export SPREADSHEET_ID='1ZlKUI7JP4ffMLv2s5jRBZLQ5njMYJKDEe_EW9tU8e60`
 5. Copy the `client_email` value in `google-api-secrets.json`
-6. Click the Share button and paste the email address from the previous step into it. Give it permission to edit. Go to Advanced and uncheck the option to send a notification. Another option is to leave it checked and ignore the mail delivery error you'll get in your email.
+6. Click the Share button and paste the email address from the previous step into it. Give it permission to edit.
 7. Run `mysql` and `create database products_dev;` in the console, and exit out of it
 8. Load the schema and data by running `mysql < mysql-products.sql`
 9. Run `node index.js`
